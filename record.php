@@ -15,9 +15,9 @@ if (isset($_POST['submit'])) {
     $result = $conn->query($sql);
     if ($result == true) {
 
-        echo "CADASTRO FEITO";
+      echo "CADASTRO FEITO <br> <a href= login.php>Click aqui para continuar</a>";
     } else {
-        echo "erro" . $sql . "<br>" . $conn->erro;
+       echo "erro" . $sql . "<br>" . $conn->erro;
     }
 
     $conn->close();
