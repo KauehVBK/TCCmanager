@@ -13,6 +13,7 @@ if (isset($_GET['ID_usu'])) {
      if ($result == TRUE) {
 
         echo "Deletado com sucesso.";
+        echo "<br> <a href= view.php>click aqui para voltar</a>";
 
     }else{
 
@@ -23,3 +24,5 @@ if (isset($_GET['ID_usu'])) {
 } 
 
 ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

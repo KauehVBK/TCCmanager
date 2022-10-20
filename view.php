@@ -15,10 +15,16 @@ $result = $conn->query($sql);
 <head>
 
     <title>Tela view</title>
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
+
+<nav class="navbar">
+  <!-- <a class="nav-link" href="posts">Posts <span class="sr-only">(current)</span></a> -->
+    
+    <span class="navbar-toggler-icon"></span>
+</nav>
 
 <body>
 

@@ -7,19 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<body>
 
-    <form action="record.php" method="POST">
+<body >
+<div class="container-fluid" class="position-static">
+    <form action="record.php" method="POST" >
         <fieldset>
-            <legend>Digite suas informações</legend>
+          <h1>Digite suas informações</h1>
 
             Nome <br>
 
@@ -57,12 +54,12 @@
 
             <br><br>
 
-            <input type="submit" name="submit" value="submit" link="record.php">
+            <input type="submit" name="submit" value="enviar" link="record.php" class="btn btn-info">
         
         </fieldset>
 
     </form>
-
+</div>
 </body>
 
 </html>

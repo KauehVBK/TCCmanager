@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-
+session_start();
 if (isset($_POST['submit'])) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -15,7 +15,16 @@ if (isset($_POST['submit'])) {
     $result = $conn->query($sql);
     if ($result == true) {
 
-      echo "CADASTRO FEITO <br> <a href= login.php>Click aqui para continuar</a>";
+      echo "
+      <div class=container-fluid class=position-relative >
+      
+      CADASTRO FEITO 
+      <br>
+      <a href= login.php>Click aqui para continuar</a>
+    
+      </div>  
+      ";
+      
     } else {
        echo "erro" . $sql . "<br>" . $conn->erro;
     }
@@ -24,3 +33,5 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
